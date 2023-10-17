@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+header,
+main {
+  max-width: 1080px;
+  min-width: 500px;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid salmon;
+}
+
+main form {
+  width: 100%;
+}
+
+fieldset {
+  border-radius: 5px;
+  border: 2px solid salmon;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+legend {
+  font-size: 1.2rem;
+  padding: 0 5rem;
+  text-align: center;
+}
+
+fieldset.personal-info {
+  text-align: center;
+}
+fieldset.personal-info p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+fieldset.personal-info input,
+select {
+  width: 70%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  font-size: 1.2rem;
+  font-family: monospace;
+}
+
+fieldset.personal-info input:focus,
+fieldset.personal-info input:hover,
+fieldset.personal-info select:hover,
+fieldset.personal-info select:focus {
+  border: 2px solid gold;
+  outline: none;
+}
+
+fieldset.select-niche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+}
+
+fieldset.select-niche p {
+  font-size: 1.1rem;
+  margin: 1rem 0.7rem;
+}
+
+fieldset.select-niche p label {
+  cursor: pointer;
+}
+
+fieldset.select-niche p input {
+  cursor: pointer;
+}
+
+fieldset.skills {
+  display: flex;
+  justify-content: space-around;
+}
+fieldset.skills .language,
+fieldset.skills .framework {
+  border-bottom: 2px solid cadetblue;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+fieldset.skills .programming-language {
+  margin-right: 100px;
+}
+
+fieldset.skills input[type="checkbox"] {
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+}
+fieldset.skills p label:hover {
+  border-bottom: 1px solid gold;
+}
+
+fieldset.skills p label {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+fieldset.hobbies-interests {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 3rem 3rem; */
+}
+fieldset.hobbies-interests div label {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: monospace;
+  padding: 1rem 0;
+  border-bottom: 2px solid gold;
+  outline: none;
+}
+
+fieldset.hobbies-interests div {
+  width: 45%;
+  background: cadetblue;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+fieldset.hobbies-interests textarea {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+fieldset.hobbies-interests textarea:focus {
+  outline: none;
+}
+
+form div.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+form div.btn button {
+  padding: 0.7rem 2rem;
+  color: whitesmoke;
+  border: 2px solid gold;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+form div.btn button:hover {
+  background-color: cadetblue;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  color: whitesmoke;
+  background-color: teal;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}

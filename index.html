@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Contact Form | Task 1</title>
+    <link rel="icon" href="./icon.png" />
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Registration Form</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset class="personal-info">
+          <legend>Personal Information</legend>
+          <p>
+            <input
+              type="text"
+              placeholder="Enter your fullname"
+              id="name"
+              name="name"
+              required
+              autofocus
+              autocomplete="off"
+            />
+          </p>
+          <p>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="email"
+              name="email"
+              required
+              autocomplete="off"
+            />
+          </p>
+          <p>
+            <label for="phone"></label>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="Enter phone number"
+              autocomplete="off"
+              required
+            />
+          </p>
+          <p>
+            <label for="dob">D.O.B</label>
+            <input type="date" name="dob" id="dob" required />
+          </p>
+          <p>
+            <select name="field" id="field">
+              <option value="select field of study">
+                Select Field of Study
+              </option>
+              <option value="computer science">Computer Science</option>
+              <option value="tnformation technology">
+                Information Technology
+              </option>
+              <option value="software engineering">Software Engineering</option>
+              <option value="artificial intelligence">
+                Artificial Intelligence
+              </option>
+              <option value="internet of things">Internet of Things</option>
+              <option value="cyber security">Cyber Security</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset class="select-niche">
+          <legend>Select a Niche</legend>
+          <p>
+            <input type="radio" name="niche" id="webdev" value="webdev" />
+            <label for="webdev">Web Development</label>
+          </p>
+          <p>
+            <input type="radio" name="niche" id="appdev" value="appdev" />
+            <label for="appdev">Mobile App Development</label>
+          </p>
+          <p>
+            <input type="radio" name="niche" id="ml" value="ml" />
+            <label for="ml">Machine Learning</label>
+          </p>
+          <p>
+            <input type="radio" name="niche" id="iot" value="iot" />
+            <label for="iot">Internet of Things</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="niche"
+              id="cybersecurity"
+              value="cybersecurity"
+            />
+            <label for="cybersecurity">Cyber Security</label>
+          </p>
+        </fieldset>
+        <fieldset class="skills">
+          <legend>Skills</legend>
+          <div class="programming-language">
+            <p class="language">Programming Languages you know</p>
+            <p>
+              <input type="checkbox" id="c++" name="skill" value="c++" />
+              <label for="c++">C++</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="javascript"
+                name="skill"
+                value="javascript"
+              />
+              <label for="javascript">JavaScript</label>
+            </p>
+            <p>
+              <input type="checkbox" id="java" name="skill" value="java" />
+              <label for="java">Java</label>
+            </p>
+            <p>
+              <input type="checkbox" id="python" name="skill" value="python" />
+              <label for="python">Python</label>
+            </p>
+
+            <p>
+              <input type="checkbox" id="php" name="skill" value="php" />
+              <label for="php">PHP</label>
+            </p>
+          </div>
+          <div class="tech-stack">
+            <p class="framework">
+              Web Development Tech Stack or frameworks you know
+            </p>
+            <p>
+              <input type="checkbox" id="mern" name="techStack" value="mern" />
+              <label for="mern">MERN Stack</label>
+            </p>
+            <p>
+              <input type="checkbox" id="mean" name="techStack" value="mean" />
+              <label for="mean">MEAN Stack</label>
+            </p>
+            <p>
+              <input type="checkbox" id="pern" name="techStack" value="pern" />
+              <label for="pern">PERN Stack</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="django"
+                name="techStack"
+                value="django"
+              />
+              <label for="django">Django</label>
+            </p>
+
+            <p>
+              <input
+                type="checkbox"
+                id="laravel"
+                name="techStack"
+                value="laravel"
+              />
+              <label for="laravel">Laravel</label>
+            </p>
+          </div>
+        </fieldset>
+        <fieldset class="hobbies-interests">
+          <legend>Hobbies &amp; Interests</legend>
+          <div>
+            <label for="hobbies">Tell us your hobbies</label>
+            <!-- <br /> -->
+            <textarea
+              name="hobbies"
+              id="hobbies"
+              placeholder="I like coding..."
+            ></textarea>
+          </div>
+          <div>
+            <label for="interests">Tell us your interests</label>
+            <!-- <br /> -->
+            <textarea
+              name="interests"
+              id="interests"
+              placeholder="I want to become fullstack web dev..."
+            ></textarea>
+          </div>
+        </fieldset>
+        <div class="btn">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; InternSavy All Copyrights Reserved 2023</p>
+    </footer>
+  </body>
+</html>
